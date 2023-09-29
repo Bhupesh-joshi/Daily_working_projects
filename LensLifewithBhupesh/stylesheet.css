@@ -12,29 +12,30 @@ body {
 
 Header {
     width: 100%;
+    max-width: 1300px;
     height: 100px;
-    background-color: #11101b;
+    background-color: #ec1839;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
 }
 
-.logo {
+Header .logo {
     font-size: 28px;
     font-weight: 800;
     color: #fefefe;
 }
 
-.hamburger {
+Header .hamburger {
     display: none;
 }
 
-.navBar ul {
+Header .navBar ul {
     display: flex;
 }
 
-.navBar ul li a {
+Header .navBar ul li a {
     display: block;
     color: #fefefe;
     font-size: 20px;
@@ -42,14 +43,22 @@ Header {
     border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
+    text-decoration: none;
+}
+
+Header .loginSec div a {
+    width: 20px;
+    border: 10px;
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    /* padding: 10px 25px; */
+    border-radius: 50px;
+    transition: 0.2s;
+    /* margin: 0 5px; */
+    text-decoration: none;
 }
 
 .navBar ul li a:hover {
-    color: #11101b;
-    background: #fefefe;
-}
-
-.navBar ul li a.active {
-    color: #11101b;
-    background: #fefefe;
+    color: #7ded49;
 }
